@@ -4,8 +4,11 @@ import lombok.Data;
 
 @Data
 public class AuthorDTO {
-	private Long id;
+	//private Long id;
 	private String name;
-	//private String email;
+	private String gender;
+	private int age;
+	private String phone;
+	private String email;
 
 }
