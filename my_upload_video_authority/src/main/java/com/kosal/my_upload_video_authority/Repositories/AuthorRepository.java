@@ -11,5 +11,6 @@ import com.kosal.my_upload_video_authority.entities.Author;
 @Repository
 public interface AuthorRepository extends JpaRepository<Author,Long>,JpaSpecificationExecutor<Author>{
 	List<Author>findByNameLike(String name);
+	List<Author>findByNameContaining(String name);
 
 }
